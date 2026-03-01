@@ -14,7 +14,7 @@ IGNORED_KEYS = {
     Key.up, Key.down, Key.left, Key.right,
     Key.home, Key.end, Key.page_up, Key.page_down,
     Key.f1, Key.f2, Key.f3, Key.f4, Key.f5, Key.f6,
-    Key.f7, Key.f8, Key.f9, Key.f10, Key.f11, Key.f12,
+    Key.f7, Key.f8, Key.f9, Key.f10, Key.f11, Key.f12, Key.enter
 }
 
 def fake_type(text, delay):
@@ -24,7 +24,7 @@ def fake_type(text, delay):
     stopped = [False]
     last_time = [0]
     injecting = [False]
-    done_event = threading.Event()
+    done_event = threading.Event
     COOLDOWN = 0.05
 
     def type_char(ch):
@@ -93,7 +93,7 @@ def main():
             break
         print("Please enter 'code' or 'text'.")
 
-    model = "deepseek-coder:6.7b" if mode == "code" else "llama3.1:8b"
+    model = "deepseek-coder:6.7b" if mode == "code" else "llama3"
     print(f"\nUsing model: {model}")
     print("Pulling model (if not already available)...")
     try:

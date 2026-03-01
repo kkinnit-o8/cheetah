@@ -1,0 +1,14 @@
+ideer:
+
+AI aimbot:
+ai software som tar bilde av enemy sprite og recognizer den, dermed kan den brukes som aimbot.
+
+AI identity stealer (AI-Driven Personal Data Harvester):
+scan all usernames of person and return all data on all platforms, then feed it to ai and predict them.
+
+AI model trained on reddit:
+responds like redditor
+
+
+Local chatgpt:
+    med chatgpt interface
